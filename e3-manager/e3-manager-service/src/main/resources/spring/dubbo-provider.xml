@@ -33,5 +33,5 @@
 	<bean id="itemServiceImpl" class="cn.e3mall.manager.service.impl.ItemServiceImpl"></bean>
 	<!-- 发布服务 -->
 	<dubbo:service interface="cn.e3mall.manager.service.ItemService"
-		ref="itemServiceImpl" />
+		ref="itemServiceImpl" timeout="0" />
 </beans>
